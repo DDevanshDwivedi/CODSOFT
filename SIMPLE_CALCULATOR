@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    float n1, n2;
+    cout << "Enter the first number - ";
+    cin >> n1;
+    cout << "Enter the second number - ";
+    cin >> n2;
+    int choice;
+    cout << "\n Enter 1- addition ";
+    cout << "\n Enter 2- subtraction ";
+    cout << "\n Enter 3- multiplication ";
+    cout << "\n Enter 4- division ";
+    cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        cout << "Addition is  - " << n1 + n2 << endl;
+        break;
+    case 2:
+        cout << "Subtraction is - " << n1 - n2 << endl;
+        break;
+    case 3:
+        cout << "Multiplication is - " << n1 * n2 << endl;
+        break;
+    case 4:
+        if (n2 != 0)
+        {
+            cout << "Division is - " << n1 / n2 << endl;
+        }
+        else
+        {
+            cout << "Error: Division by zero is not allowed." << endl;
+        }
+        break;
+
+    default:
+        cout << "Error: Invalid selection." << endl;
+    }
+    return 0;
+}
