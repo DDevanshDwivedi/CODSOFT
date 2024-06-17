@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{ 
+    srand(time(nullptr));
+    int random_n= rand()%1000+1;// I take the range from 1 to 1000
+    int n=0;
+    while (true)
+    {
+        cout<<"Guess the number - ";
+        cin>>n;
+        if(random_n==n)
+        {
+            cout<<endl << "You guessed correctly!" << endl;
+            break;
+        }
+        else if(random_n>n)
+            cout<<"Your guess is too low." << endl;
+        else 
+            cout<<"Your guess is too high." << endl;
+    }
+	return 0; 
+}
